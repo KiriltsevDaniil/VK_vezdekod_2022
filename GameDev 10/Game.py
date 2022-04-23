@@ -50,7 +50,7 @@ while flag:
 		print(f"Your score is {score}")
 	else:
 		if answer != key:
-			print(f"GG You've lost, your score is {score}")
+			print(f"GG You've lost, your score is  {score}")
 			flag = False
 		else:
 			score += 1
