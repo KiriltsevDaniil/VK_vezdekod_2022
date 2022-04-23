@@ -43,14 +43,14 @@ while flag:
 	if key not in key_opt:
 		while key not in key_opt:
 			key = input("Oh, poor boy you can input only '+', '-' or 'q'\n")
+		
+	print(f"{pass_1[0]} has {pass_1[1]} uses \n{pass_2[0]} has {pass_2[1]} uses\n")
+	if key == 'q':
+		flag = False
+		print(f"Your score is {score}")
 	else:
-		print(f"{pass_1[0]} has {pass_1[1]} uses \n{pass_2[0]} has {pass_2[1]} has\n")
-		if key == 'q':
+		if answer != key:
+			print(f"GG You've lost, your score is {score}")
 			flag = False
-			print(f"Your score is {score}")
 		else:
-			if answer != key:
-				print(f"GG You've lost, your score is {score}")
-				flag = False
-			else:
-				score += 1
+			score += 1
